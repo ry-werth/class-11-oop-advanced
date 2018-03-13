@@ -165,7 +165,6 @@ def test_from_keys_with_sequences():
         'def': None
     }
 
-@pytest.mark.skip(reason="Homework for students")
 def test_add_two_dicts_with_repeated_keys():
     d1 = OrderedDict()
     d1['a'] = 1
@@ -184,7 +183,6 @@ def test_add_two_dicts_with_repeated_keys():
     }
 
 
-@pytest.mark.skip(reason="Homework for students")
 def test_set_repeated_items():
     d = OrderedDict()
     assert d.keys() == []
@@ -192,7 +190,7 @@ def test_set_repeated_items():
 
     d['language'] = 'Python'
     assert d.keys() == ['language']
-    assert d.values() == [1]
+    assert d.values() == ['Python']
 
     d['other'] = ('a', 'b', 'c')
     assert d.keys() == ['language', 'other']
@@ -204,7 +202,7 @@ def test_set_repeated_items():
     assert d.values() == ['Ruby', ('a', 'b', 'c')]
 
 
-@pytest.mark.skip(reason="Homework for students")
+
 def test_dictionaries_are_not_equal_order():
     d1 = OrderedDict()
     d1['a'] = 1
